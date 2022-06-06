@@ -111,7 +111,7 @@ private constructor() : Thread.UncaughtExceptionHandler {
         // 收集设备信息
         collectCrashDeviceInfo(mContext)
         // 保存错误报告文件
-        // saveCrashInfoToFile(ex);
+         saveCrashInfoToFile(ex);
         // 发送错误报告到服务器
         // sendCrashReportsToServer(mContext);
         return true
@@ -188,9 +188,10 @@ private constructor() : Thread.UncaughtExceptionHandler {
             val timestamp = SimpleDateFormat("yyyyMMddHHmmss").format(Date())
             val fileName = "crash-$timestamp$CRASH_REPORTER_EXTENSION"
             // 保存文件
-            val directory = File(EnvironmentUtil.Storage.getExternalCacheDir(mContext!!), "logs")
+            val directory = File(mContext?.filesDir?.absolutePath,"logs")
+//            val directory = File(EnvironmentUtil.Storage.getExternalCacheDir(mContext!!), "logs")
             if (!directory.exists()) {
-                directory.mkdirs()
+                directory.mkdir()
             }
 
             val file = File(directory, fileName)

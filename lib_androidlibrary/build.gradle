@@ -2,7 +2,6 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
 }
-apply plugin: 'com.github.dcendents.android-maven'
 
 def config = rootProject.ext.androidVersion
 def dependenceConfig = rootProject.ext.pomPath
@@ -48,3 +47,6 @@ dependencies {
     implementation dependenceConfig.logger
     api dependenceConfig.SwipeToLoadLayout
 }
+apply from : rootProject.file("gradleConfig/github-maven-publish.gradle")
+
+//apply from : rootProject.file("gradleConfig/maven-publish.gradle")
