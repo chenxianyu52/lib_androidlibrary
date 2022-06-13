@@ -14,12 +14,14 @@
         <activity android:name=".recycleDemo.DragChangeItemRecycleActivity">
         </activity>
         <activity android:name=".pullDemo.MainActivityPull"/>
-        <activity android:name=".activity.DemoMainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".activity.DemoMainActivity"/>
     </application>
 
 
