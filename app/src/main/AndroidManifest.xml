@@ -14,14 +14,15 @@
         <activity android:name=".recycleDemo.DragChangeItemRecycleActivity">
         </activity>
         <activity android:name=".pullDemo.MainActivityPull"/>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.xianyu.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.DemoMainActivity"/>
+        <activity android:name="com.xianyu.jetpack.room.RoomActivity"/>
+        <activity android:name="com.xianyu.jetpack.viewbinding.ViewBindingActivity"/>
     </application>
 
 

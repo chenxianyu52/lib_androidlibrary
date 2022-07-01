@@ -7,7 +7,8 @@ ext {
             'androidxLifecycle'       : "2.2.0",
             'androidxNavigation'      : "2.2.2",
             'androidxAppcompat'       : "1.3.1",
-            'room'                    : "1.1.1",
+            'room'                    : "2.3.0",
+            'viewBinding'             : "4.1.3",
 
             // google
             'googleAutoService'       : "1.0-rc6",
@@ -54,11 +55,15 @@ ext {
             'androidxAppcompat'            : "androidx.appcompat:appcompat:${pomVersion.androidxAppcompat}",
             'androidxLifecycleLivedata'    : "androidx.lifecycle:lifecycle-livedata-ktx:${pomVersion.androidxLifecycle}",
             'androidxLifecycleViewmodel'   : "androidx.lifecycle:lifecycle-viewmodel-ktx:${pomVersion.androidxLifecycle}",
+            'androidxLifecycleJava8'       : "androidx.lifecycle:lifecycle-common-java8:${pomVersion.androidxLifecycle}",
             'androidxNavigationFragment'   : "androidx.navigation:navigation-fragment:${pomVersion.androidxNavigation}",
             'androidxNavigationFragmentKtx': "androidx.navigation:navigation-fragment-ktx:${pomVersion.androidxNavigation}",
             'androidxNavigationUi'         : "androidx.navigation:navigation-ui:${pomVersion.androidxNavigation}",
             'androidxNavigationKtx'        : "androidx.navigation:navigation-ui-ktx:${pomVersion.androidxNavigation}",
-            'androidRoom'                  : "android.arch.persistence.room:runtime:${pomVersion.room}",
+            'androidRoomRuntime'           : "androidx.room:room-runtime:${pomVersion.room}",
+            'androidRoomCompiler'          : "androidx.room:room-compiler:${pomVersion.room}",
+            "androidRoomKtx"               : "androidx.room:room-ktx:${pomVersion.room}",
+            "androidViewBinding"           : "androidx.databinding:viewbinding:${pomVersion.viewBinding}",
 
             // google
             'googleAutoService'            : "com.google.auto.service:auto-service:${pomVersion.googleAutoService}",

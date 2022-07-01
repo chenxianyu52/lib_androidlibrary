@@ -39,16 +39,11 @@ dependencies {
     implementation dependenceConfig.kotlinStdlib
     implementation dependenceConfig.androidxCoreKtx
     implementation dependenceConfig.androidxAppcompat
-    implementation dependenceConfig.androidxAppcompat
-    implementation dependenceConfig.googleMaterial
-    implementation 'com.github.chenxianyu52:lib_javalibrary:v0.0.1'
-//    implementation project(path: ':lib_javalibrary')
-    implementation dependenceConfig.XXPermissions
-    implementation dependenceConfig.logger
-    api dependenceConfig.SwipeToLoadLayout
-    implementation dependenceConfig.androidViewBinding
-    implementation dependenceConfig.androidxLifecycleJava8
+    api dependenceConfig.koin
+    api dependenceConfig.androidRoomKtx
+    implementation dependenceConfig.kotlinCoroutinesCore
+    implementation dependenceConfig.kotlinCoroutinesAndroid
+    implementation dependenceConfig.retrofit
+    implementation dependenceConfig.retrofitGson
+    implementation dependenceConfig.okhttpLoggingInterceptor
 }
-apply from : rootProject.file("gradleConfig/github-maven-publish.gradle")
-
-//apply from : rootProject.file("gradleConfig/maven-publish.gradle")

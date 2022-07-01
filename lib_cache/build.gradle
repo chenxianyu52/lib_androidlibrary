@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
 }
+apply plugin: 'kotlin-kapt'
 
 def config = rootProject.ext.androidVersion
 def dependenceConfig = rootProject.ext.pomPath
@@ -39,16 +40,11 @@ dependencies {
     implementation dependenceConfig.kotlinStdlib
     implementation dependenceConfig.androidxCoreKtx
     implementation dependenceConfig.androidxAppcompat
-    implementation dependenceConfig.androidxAppcompat
     implementation dependenceConfig.googleMaterial
-    implementation 'com.github.chenxianyu52:lib_javalibrary:v0.0.1'
-//    implementation project(path: ':lib_javalibrary')
-    implementation dependenceConfig.XXPermissions
     implementation dependenceConfig.logger
-    api dependenceConfig.SwipeToLoadLayout
-    implementation dependenceConfig.androidViewBinding
-    implementation dependenceConfig.androidxLifecycleJava8
+    api dependenceConfig.androidRoomRuntime
+    kapt dependenceConfig.androidRoomCompiler
+    api dependenceConfig.androidRoomKtx
+    implementation project(path: ':lib_androidlibrary')
 }
 apply from : rootProject.file("gradleConfig/github-maven-publish.gradle")
-
-//apply from : rootProject.file("gradleConfig/maven-publish.gradle")

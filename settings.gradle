@@ -1,4 +1,6 @@
-include ':otherlib'
+include ':lib_cache'
 include ':lib_androidlibrary'
 include ':app'
+include ':lib_mvp'
+//include ':lib_net'
 rootProject.name = "AndroidLibrary"
