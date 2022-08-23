@@ -23,6 +23,7 @@
 
         <activity android:name="com.xianyu.jetpack.room.RoomActivity"/>
         <activity android:name="com.xianyu.jetpack.viewbinding.ViewBindingActivity"/>
+        <activity android:name="com.xianyu.nestscroller.NestScrollerDemoActivity"/>
     </application>
 
 

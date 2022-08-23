@@ -44,6 +44,12 @@ class MainActivity : Activity() {
                 "com.xianyu.jetpack.viewbinding.ViewBindingActivity"
             )
         )
+        list.add(
+            Bean(
+                "nestScroller demo",
+                "com.xianyu.nestscroller.NestScrollerDemoActivity"
+            )
+        )
     }
 
     private fun initView() {
