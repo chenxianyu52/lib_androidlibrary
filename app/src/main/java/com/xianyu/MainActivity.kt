@@ -50,6 +50,18 @@ class MainActivity : Activity() {
                 "com.xianyu.nestscroller.NestScrollerDemoActivity"
             )
         )
+        list.add(
+            Bean(
+                "so demo",
+                "com.xianyu.nativeso.SoActivity"
+            )
+        )
+        list.add(
+            Bean(
+                "sso 下载demo",
+                "com.xianyu.sso.SSODemoActivity"
+            )
+        )
     }
 
     private fun initView() {

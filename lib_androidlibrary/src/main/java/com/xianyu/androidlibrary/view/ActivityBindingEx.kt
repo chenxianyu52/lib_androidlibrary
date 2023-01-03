@@ -5,7 +5,10 @@ import android.view.LayoutInflater
 import androidx.viewbinding.ViewBinding
 
 fun <VB : ViewBinding> Activity.viewBinding(inflate: (LayoutInflater) -> VB) = lazy {
-    inflate(layoutInflater).also { binding ->
-        setContentView(binding.root)
-    }
+//    runOnUiThread {
+        inflate(layoutInflater).also { binding ->
+            runOnUiThread { setContentView(binding.root) }
+        }
+//    }
+
 }

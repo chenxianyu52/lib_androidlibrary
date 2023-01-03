@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.xianyu.androidlibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -24,6 +29,8 @@
         <activity android:name="com.xianyu.jetpack.room.RoomActivity"/>
         <activity android:name="com.xianyu.jetpack.viewbinding.ViewBindingActivity"/>
         <activity android:name="com.xianyu.nestscroller.NestScrollerDemoActivity"/>
+        <activity android:name="com.xianyu.nativeso.SoActivity"/>
+        <activity android:name="com.xianyu.sso.SSODemoActivity"/>
     </application>
 
 
